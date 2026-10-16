@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceVerse AI | Your Dance. Your Avatar.</title>
+  <meta name="description" content="Create your own virtual dancer with DanceVerse AI.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">✦</span>
+      DanceVerse<span class="ai">AI</span>
+    </a>
+
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#styles">Dance Styles</a>
+      <a href="#studio">Avatar Studio</a>
+    </nav>
+
+    <a href="#studio" class="nav-button">Try Studio ↗</a>
+    <button class="menu-button" id="menuButton" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR MOVEMENT. YOUR DIGITAL IDENTITY.
+        </div>
+
+        <h1>
+          Dance like you.<br>
+          <span class="gradient-text">Show your avatar.</span>
+        </h1>
+
+        <p class="hero-description">
+          Bring your dance moves to a virtual world. Create your own
+          avatar, explore different dance styles and express yourself
+          without showing your real face.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#studio" class="primary-button">Create Your Avatar <span>↗</span></a>
+          <a href="#styles" class="secondary-button">Explore Dance Styles</a>
+        </div>
+
+        <div class="hero-points">
+          <span>✓ Custom avatars</span>
+          <span>✓ Multiple dance styles</span>
+          <span>✓ Your creative space</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-label label-top">DIGITAL MOTION <span>●</span></div>
+
+        <div class="avatar-stage">
+          <div class="stage-glow"></div>
+          <div class="avatar" id="heroAvatar">
+            <div class="avatar-head"></div>
+            <div class="avatar-neck"></div>
+            <div class="avatar-body"></div>
+            <div class="avatar-arm left-arm"></div>
+            <div class="avatar-arm right-arm"></div>
+            <div class="avatar-leg left-leg"></div>
+            <div class="avatar-leg right-leg"></div>
+            <div class="avatar-foot left-foot"></div>
+            <div class="avatar-foot right-foot"></div>
+          </div>
+          <div class="stage-floor"></div>
+        </div>
+
+        <div class="floating-card card-one">
+          <span class="mini-icon">✦</span>
+          <div><strong>Avatar mode</strong><small>Your digital self</small></div>
+        </div>
+
+        <div class="floating-card card-two">
+          <span class="equalizer">▂ ▅ ▇ ▄ ▆</span>
+          <div><strong>Motion studio</strong><small>Move to your rhythm</small></div>
+        </div>
+
+        <div class="visual-label label-bottom">DANCEVERSE / 001</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>01</strong><span>Build your avatar</span></div>
+      <div><strong>02</strong><span>Choose your style</span></div>
+      <div><strong>03</strong><span>Bring your creativity</span></div>
+      <div><strong>∞</strong><span>Express yourself</span></div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <span class="section-kicker">WHY DANCEVERSE?</span>
+        <h2>Your dance. <span class="gradient-text">Your rules.</span></h2>
+        <p>A creative space where your virtual identity takes centre stage.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon cyan-icon">✦</div>
+          <h3>Custom Avatar</h3>
+          <p>Choose an avatar color and create a digital look that feels like you.</p>
+          <span class="card-number">01 / CREATE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon mint-icon">♫</div>
+          <h3>Dance Your Way</h3>
+          <p>Explore Bollywood, hip-hop, classical and freestyle dance categories.</p>
+          <span class="card-number">02 / EXPLORE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon orange-icon">◎</div>
+          <h3>Move with Privacy</h3>
+          <p>Imagine your dance performance represented by a digital character.</p>
+          <span class="card-number">03 / EXPRESS</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section styles-section" id="styles">
+      <div class="section-heading">
+        <span class="section-kicker">FIND YOUR RHYTHM</span>
+        <h2>Pick your <span class="gradient-text">dance vibe.</span></h2>
+        <p>Select a style to set the mood for your studio.</p>
+      </div>
+
+      <div class="style-grid">
+        <button class="style-card active" data-style="Bollywood">
+          <span class="style-symbol">✺</span>
+          <span class="style-name">Bollywood</span>
+          <span class="style-detail">Expressive · Energetic</span>
+          <span class="style-arrow">↗</span>
+        </button>
+
+        <button class="style-card" data-style="Hip-Hop">
+          <span class="style-symbol">↗</span>
+          <span class="style-name">Hip-Hop</span>
+          <span class="style-detail">Urban · Powerful</span>
+          <span class="style-arrow">↗</span>
+        </button>
+
+        <button class="style-card" data-style="Classical">
+          <span class="style-symbol">❋</span>
+          <span class="style-name">Classical</span>
+          <span class="style-detail">Graceful · Traditional</span>
+          <span class="style-arrow">↗</span>
+        </button>
+
+        <button class="style-card" data-style="Freestyle">
+          <span class="style-symbol">〰</span>
+          <span class="style-name">Freestyle</span>
+          <span class="style-detail">Creative · Unrestricted</span>
+          <span class="style-arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section studio-section" id="studio">
+      <div class="section-heading studio-heading">
+        <span class="section-kicker">YOUR PERSONAL SPACE</span>
+        <h2>Welcome to the <span class="gradient-text">Avatar Studio.</span></h2>
+        <p>Customize your character and try the interactive demo.</p>
+      </div>
+
+      <div class="studio-layout">
+        <div class="studio-preview">
+          <div class="preview-top">
+            <span><span class="live-dot"></span> LIVE PREVIEW</span>
+            <span class="preview-tag">2D DEMO</span>
+          </div>
+
+          <div class="preview-stage">
+            <div class="preview-ring ring-a"></div>
+            <div class="preview-ring ring-b"></div>
+
+            <div class="avatar studio-avatar" id="studioAvatar">
+              <div class="avatar-head"></div>
+              <div class="avatar-neck"></div>
+              <div class="avatar-body"></div>
+              <div class="avatar-arm left-arm"></div>
+              <div class="avatar-arm right-arm"></div>
+              <div class="avatar-leg left-leg"></div>
+              <div class="avatar-leg right-leg"></div>
+              <div class="avatar-foot left-foot"></div>
+              <div class="avatar-foot right-foot"></div>
+            </div>
+
+            <div class="preview-floor"></div>
+          </div>
+
+          <div class="preview-bottom">
+            <div><small>SELECTED STYLE</small><strong id="selectedStyle">Bollywood</strong></div>
+            <div><small>AVATAR STATUS</small><strong id="avatarStatus">Ready to dance</strong></div>
+          </div>
+        </div>
+
+        <div class="studio-controls">
+          <div class="control-block">
+            <div class="control-title"><span>01</span><h3>Choose your avatar color</h3></div>
+            <p>Give your digital dancer a personal touch.</p>
+
+            <div class="color-options">
+              <button class="color-swatch selected" data-color="#00c9e8" style="--swatch:#00c9e8" aria-label="Electric cyan"></button>
+              <button class="color-swatch" data-color="#00f5c4" style="--swatch:#00f5c4" aria-label="Neon mint"></button>
+              <button class="color-swatch" data-color="#ff6b35" style="--swatch:#ff6b35" aria-label="Neon orange"></button>
+              <button class="color-swatch" data-color="#ff477e" style="--swatch:#ff477e" aria-label="Hot pink"></button>
+              <button class="color-swatch" data-color="#f5f7fa" style="--swatch:#f5f7fa" aria-label="Pearl white"></button>
+            </div>
+            <span class="color-name" id="colorName">Electric Cyan</span>
+          </div>
+
+          <div class="control-block">
+            <div class="control-title"><span>02</span><h3>Your dance video</h3></div>
+            <p>Choose a video from your device for the demo.</p>
+
+            <label class="upload-area" for="danceVideo">
+              <span class="upload-icon">↑</span>
+              <strong>Upload your dance video</strong>
+              <span>MP4, WebM or MOV · Max 100 MB</span>
+              <input type="file" id="danceVideo" accept="video/mp4,video/webm,video/quicktime">
+            </label>
+            <p class="file-message" id="fileMessage">No video selected yet.</p>
+            <video id="videoPreview" class="video-preview" controls hidden></video>
+          </div>
+
+          <div class="control-block">
+            <div class="control-title"><span>03</span><h3>Start your session</h3></div>
+            <p>Play the demo animation or pause whenever you like.</p>
+            <div class="studio-buttons">
+              <button class="primary-button" id="startButton">▶ Start Dancing</button>
+              <button class="secondary-button" id="pauseButton">Ⅱ Pause</button>
+            </div>
+            <p class="demo-note">Demo mode: the avatar animation is illustrative and does not yet track your uploaded video's movements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-decoration">✦</div>
+      <span class="section-kicker">THE FUTURE OF SELF-EXPRESSION</span>
+      <h2>Don't just watch the rhythm.<br><span class="gradient-text">Become the movement.</span></h2>
+      <p>Your digital dance journey starts here.</p>
+      <a href="#studio" class="primary-button">Enter Avatar Studio ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo"><span class="logo-icon">✦</span> DanceVerse<span class="ai">AI</span></a>
+    <p>Made for movement. Designed for imagination.</p>
+    <span>© 2026 DanceVerse AI · Prototype</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
